@@ -65,4 +65,15 @@ if (contactForm && successMessage) {
 document.querySelector('input[name="datenschutz"]').addEventListener('click', () => {
     window.open('datenschutz.html', '_blank');
 });
+    const navCheck = document.getElementById('nav-check');
+const navLinks = document.querySelectorAll('.nav ul li a');
+if (navCheck && navLinks.length > 0) {
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                navCheck.checked = false;
+            }
+        });
+    });
+}
 });
