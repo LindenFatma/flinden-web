@@ -749,6 +749,7 @@ section {
     align-items: center;
     gap: 10px;
     cursor: pointer;
+   flex-wrap: wrap;
 }
 
 .checkbox-label a {
@@ -758,6 +759,7 @@ section {
 
 .checkbox-label input[type="checkbox"] {
     accent-color: #c41e1e;
+   flex-shrink: 0;
 }
 
 /* Button */
