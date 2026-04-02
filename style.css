@@ -1232,14 +1232,14 @@ section {
     }
     
     .section8 > div {
-        flex-direction: column;     /* Mobil ve tablette alt alta */
+        flex-direction: column;   
         gap: 30px;
-        text-align: center;         /* Ortalanmış görünüm */
+        text-align: center;       
     }
     
     .flyer-text {
-        min-width: 100%;            /* Tam genişlik kullan */
-        order: 1;                   /* Yazı önce çıksın */
+        min-width: 100%;           
+        order: 1;                
     }
     
     .flyer-text h2 {
@@ -1253,7 +1253,7 @@ section {
     }
     
     .section8 img {
-        order: 2;                   /* Resim altta olsun */
+        order: 2;                  
         max-width: 100%;
         margin: 0 auto;             /* Ortala */
     }
@@ -1269,10 +1269,12 @@ section {
 
     .section9 p {
         font-size: 0.95rem;
+       font-size: 1.15rem; 
+        line-height: 1.7;
     }
 
     .section9 iframe {
-        aspect-ratio: 16 / 9; /* Mobilde daha yatay görünüm */
+        aspect-ratio: 16 / 9;
         max-width: 100%;
         border-radius: 8px;
     }
