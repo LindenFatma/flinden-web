@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    
     // Otomatik slider kapatıldı (istersen açabilirsin)
     // setInterval(() => {
     //     let next = (currentIndex + 1) % slides.length;
