@@ -33,7 +33,19 @@
                 </nav>
             </div>
         </header>
-        <div class="container-daten">
+        <style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Başlık altında kaybolma sorununu çözer */
+    h2 {
+        scroll-margin-top: 100px;
+    }
+</style>
+
+<div class="container-daten">
+
     <h1>Datenschutzerklärung</h1>
     <p><strong>Stand: 10. April 2026</strong></p>
 
@@ -47,59 +59,92 @@
         <li><a href="#m24">Internationale Datentransfers</a></li>
         <li><a href="#m12">Speicherung und Löschung</a></li>
         <li><a href="#m10">Ihre Rechte</a></li>
-        <li><a href="#m225">Bereitstellung der Website und Webhosting</a></li>
-        <li><a href="#m182">Kontakt- und Anfrageverwaltung</a></li>
-        <li><a href="#m136">Präsenzen in sozialen Netzwerken</a></li>
+        <li><a href="#m225">Webhosting</a></li>
+        <li><a href="#m182">Kontakt</a></li>
+        <li><a href="#m136">Social Media</a></li>
     </ul>
 
     <h2 id="m3">Verantwortliche</h2>
-    <p><strong>Fatma Linden</strong><br>
+    <p><strong>Fatma Linden (Verantwortliche)</strong><br>
        Säge 5<br>
        72160 Horb am Neckar<br>
        Deutschland</p>
-    <p>E-Mail: <a href="mailto:hello@flinden.de">hello@flinden.de</a><br>
-       Telefon: <a href="tel:+4917668185194">+49 176 68185194</a></p>
 
-    <h2 id="m2427">Maßgebliche Rechtsgrundlagen</h2>
-    <p>Die Verarbeitung personenbezogener Daten erfolgt auf Grundlage der Datenschutz-Grundverordnung (DSGVO) sowie des Bundesdatenschutzgesetzes (BDSG). Insbesondere Art. 6 Abs. 1 DSGVO (Einwilligung, Vertragserfüllung, berechtigte Interessen etc.).</p>
+    <p>
+       E-Mail: <a href="mailto:hello@flinden.de">hello@flinden.de</a><br>
+       Telefon: <a href="tel:+4917668185194">+49 176 68185194</a>
+    </p>
 
     <h2 id="mOverview">Übersicht der Verarbeitungen</h2>
-    <p>Arten der verarbeiteten Daten: Kontaktdaten, Inhaltsdaten, Nutzungsdaten, Meta- und Protokolldaten.</p>
+    <p>
+        Arten der verarbeiteten Daten: Kontaktdaten, Inhaltsdaten, Nutzungsdaten, Meta- und Protokolldaten.
+    </p>
+
+    <h2 id="m2427">Maßgebliche Rechtsgrundlagen</h2>
+    <p>
+        Die Verarbeitung erfolgt gemäß DSGVO und BDSG, insbesondere Art. 6 Abs. 1 DSGVO.
+    </p>
 
     <h2 id="m27">Sicherheitsmaßnahmen</h2>
-    <p>Wir treffen technische und organisatorische Maßnahmen zum Schutz Ihrer Daten, insbesondere TLS/SSL-Verschlüsselung der Website, Zugriffskontrollen und regelmäßige Sicherheitsüberprüfungen.</p>
+    <p>
+        Wir nutzen TLS/SSL-Verschlüsselung, Zugriffskontrollen und regelmäßige Sicherheitsüberprüfungen.
+    </p>
 
     <h2 id="m25">Übermittlung von personenbezogenen Daten</h2>
-    <p>Eine Weitergabe Ihrer Daten erfolgt nur an sorgfältig ausgewählte Dienstleister (z. B. Webhoster), mit denen wir Auftragsverarbeitungsverträge gemäß Art. 28 DSGVO abgeschlossen haben.</p>
+    <p>
+        Daten werden nur an Dienstleister (z. B. Webhosting) weitergegeben, mit AV-Verträgen nach Art. 28 DSGVO.
+    </p>
 
     <h2 id="m24">Internationale Datentransfers</h2>
-    <p>Sofern eine Übermittlung in Drittländer (z. B. USA) stattfindet, erfolgt diese auf Grundlage des EU-US Data Privacy Framework (DPF) oder geeigneter Standardvertragsklauseln.</p>
+    <p>
+        Falls Daten in Drittländer übertragen werden, erfolgt dies nur auf Basis geeigneter Garantien (z. B. EU-US Data Privacy Framework oder Standardvertragsklauseln).
+    </p>
 
     <h2 id="m12">Speicherung und Löschung</h2>
-    <p>Ihre personenbezogenen Daten werden nur so lange gespeichert, wie es für den jeweiligen Zweck oder aufgrund gesetzlicher Aufbewahrungspflichten erforderlich ist (z. B. 10 Jahre für Buchhaltungsunterlagen).</p>
+    <p>
+        Daten werden nur so lange gespeichert, wie es gesetzlich erforderlich ist (z. B. 10 Jahre bei Buchhaltung).
+    </p>
 
     <h2 id="m10">Ihre Rechte</h2>
     <ul>
-        <li>Recht auf Auskunft</li>
-        <li>Recht auf Berichtigung</li>
-        <li>Recht auf Löschung („Recht auf Vergessenwerden“)</li>
-        <li>Recht auf Einschränkung der Verarbeitung</li>
-        <li>Recht auf Datenübertragbarkeit</li>
-        <li>Widerspruchsrecht</li>
-        <li>Widerrufsrecht bei Einwilligungen</li>
-        <li>Beschwerderecht bei einer Aufsichtsbehörde</li>
+        <li>Auskunft</li>
+        <li>Berichtigung</li>
+        <li>Löschung</li>
+        <li>Einschränkung</li>
+        <li>Datenübertragbarkeit</li>
+        <li>Widerspruch</li>
+        <li>Widerruf von Einwilligungen</li>
+        <li>Beschwerderecht bei Behörden</li>
     </ul>
 
-    <h2 id="m225">Bereitstellung der Website und Webhosting</h2>
-    <p>Zur Bereitstellung dieser Website nutzen wir Webhosting-Dienste. Dabei werden Server-Logfiles (IP-Adresse, Zugriffszeit etc.) verarbeitet. Die Verarbeitung erfolgt auf Grundlage berechtigter Interessen (Art. 6 Abs. 1 lit. f DSGVO).</p>
+    <h2 id="m225">Webhosting</h2>
+    <p>
+        Beim Hosting werden Server-Logfiles (IP-Adresse, Zeitpunkt etc.) verarbeitet.
+        Rechtsgrundlage: berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO).
+    </p>
 
-    <h2 id="m182">Kontakt- und Anfrageverwaltung</h2>
-    <p>Bei Kontaktaufnahme per E-Mail, Telefon oder Kontaktformular werden die von Ihnen mitgeteilten Daten (Name, E-Mail, Nachricht etc.) zur Bearbeitung Ihrer Anfrage gespeichert und verwendet.</p>
+    <h2 id="m182">Kontakt</h2>
+    <p>
+        Bei Kontaktaufnahme speichern wir Ihre Angaben zur Bearbeitung der Anfrage.
+    </p>
 
-    <h2 id="m136">Präsenzen in sozialen Netzwerken</h2>
-    <p>Wir unterhalten Präsenzen auf Instagram, LinkedIn und X (Twitter). Bei der Nutzung dieser Plattformen gelten die Datenschutzbestimmungen der jeweiligen Anbieter. Es kann zu Datenübermittlungen in Drittländer kommen.</p>
+    <p>
+        E-Mail: hello@flinden.de<br>
+        Telefon: +49 176 68185194<br>
+        Adresse: Säge 5, 72160 Horb am Neckar, Deutschland
+    </p>
 
-    <p><a href="impressum.html">← Zurück zum Impressum</a></p>
+    <h2 id="m136">Social Media</h2>
+    <p>
+        Wir nutzen Instagram, LinkedIn und X (Twitter). Es gelten die Datenschutzrichtlinien der Anbieter.
+    </p>
+
+    <p>
+        <a href="impressum.html">← Zum Impressum</a> |
+        <a href="#m182">Kontakt aufnehmen</a> |
+        <a href="kontakt.html">Projekt starten</a>
+    </p>
+
 </div>
 <footer class="main-footer">
     <div class="footer-container">
