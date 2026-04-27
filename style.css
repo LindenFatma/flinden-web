@@ -1175,6 +1175,7 @@ section {
 
     .slide-overlay {
         width: 100%;
+        hyphens:auto;
         padding: 20px 40px;
         justify-content: center;
         text-align: left;
