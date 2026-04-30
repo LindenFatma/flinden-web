@@ -39,30 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //     showSlide(next);
     // }, 5000);
 
-    // =====================
-    // İLETİŞİM FORMU - BAŞARI MESAJI
-    // =====================
-    const contactForm = document.getElementById('contact-form');
-const successMessage = document.getElementById('success-message');
-
-if (contactForm && successMessage) {
-    contactForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        fetch(contactForm.action, {
-            method: 'POST',
-            body: new FormData(contactForm),
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(() => {
-            contactForm.style.display = 'none';
-            successMessage.style.display = 'block';
-        }).catch(() => {
-            alert("Bir hata oluştu, lütfen tekrar deneyin.");
-        });
-    });
-}
+   
 document.querySelector('input[name="datenschutz"]').addEventListener('click', () => {
     window.open('datenschutz.html', '_blank');
 });
