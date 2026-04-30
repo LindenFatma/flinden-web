@@ -280,63 +280,34 @@
             </iframe>
         </div>
 </section>      
-       <section id="kontakt" class="section10">
-    <div class="container">
-        <div class="contact-form-wrapper">
-            <h2>Starten wir Ihr nächstes Projekt!</h2>
-            <p class="form-subtitle">
-                Haben Sie eine Idee oder planen ein Projekt?<br>
-                Ich unterstütze Sie gerne bei Branding, Printdesign und digitalen Medien.
-            </p>
+       <section class="container section-contact" id="kontakt">
+    <h2>KONTAKT</h2>
+    
+    <form id="contact-form" action="https://formsubmit.co/hello@flinden.de" method="POST">
+        <div class="form-group">
+            <input type="text" name="Name" placeholder="Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" name="Email" placeholder="E-Mail" required>
+        </div>
+        <div class="form-group">
+            <textarea name="Nachricht" rows="5" placeholder="Ihre Nachricht" required></textarea>
+        </div>
+        
+        <div class="form-group checkbox-group">
+            <input type="checkbox" name="Datenschutz-Akzeptiert" id="datenschutz" required>
+            <label for="datenschutz">
+                Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und akzeptiere sie.
+            </label>
+        </div>
 
-            <form id="contact-form" class="contact-form"
-              action="https://formsubmit.co/ajax/f.linden@mail.de"
-              method="POST">
+        <button type="submit" class="hero-btn">SENDEN</button>
+    </form>
 
     
-            <input type="hidden" name="_subject" value="Neue Projektanfrage - flinden.de">
-            <input type="hidden" name="_template" value="table">
-
-    <div class="form-group">
-        <label for="name">Vollständiger Name:</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-
-    <div class="form-group">
-        <label for="email">E-Mail-Adresse:</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-
-    <div class="form-group">
-        <label for="phone">Telefonnummer (optional):</label>
-        <input type="tel" id="phone" name="phone">
-    </div>
-
-    <div class="form-group">
-        <label for="message">Ihre Nachricht:</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
-    </div>
-
-    <div class="form-footer">
-        <button type="submit" class="hero-btn">SENDEN</button>
-        
-        <label class="checkbox-label">
-        <input type="checkbox" name="datenschutz" required>
-            Ich habe die 
-            <a href="datenschutz.html" target="_blank" style="text-decoration: underline; font-weight: bold;">
-            Datenschutzerklärung
-            </a> 
-            gelesen und stimme zu.
-        </label>
-    </div>
-</form>
-
-<!-- Başarı Mesajı -->
-<div id="success-message" class="success-message">
-    <h3>Ihre Nachricht wurde erfolgreich gesendet!</h3>
-    <p>Vielen Dank. Wir melden uns so schnell wie möglich bei Ihnen zurück.</p>
-</div>
-        </div>
+    <div id="success-message" style="display:none; text-align: center; padding: 20px; background: #f4f4f4; margin-top: 20px; color: #333; border-radius: 5px;">
+        <h3>Vielen Dank!</h3>
+        <p>Ihre Nachricht wurde erfolgreich versendet.</p>
     </div>
 </section>
        
