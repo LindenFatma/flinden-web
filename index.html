@@ -280,10 +280,11 @@
             </iframe>
         </div>
 </section>      
-       <section class="container section-contact" id="kontakt">
+      <section class="container section-contact" id="kontakt">
     <h2>KONTAKT</h2>
     
-    <form id="contact-form" action="https://formsubmit.co/hello@flinden.de" method="POST">
+    <!-- Action kısmı hello@flinden.de mail adresinize göre mailto olarak güncellendi -->
+    <form id="contact-form" action="mailto:hello@flinden.de" method="POST" enctype="text/plain">
         <div class="form-group">
             <input type="text" name="Name" placeholder="Name" required>
         </div>
@@ -301,10 +302,10 @@
             </label>
         </div>
 
-        <button type="submit" class="hero-btn">SENDEN</button>
+        <!-- Butona tıklandığında teşekkür mesajını gösteren fonksiyon eklendi -->
+        <button type="submit" class="hero-btn" onclick="showSuccess()">SENDEN</button>
     </form>
 
-    
     <div id="success-message" style="display:none; text-align: center; padding: 20px; background: #f4f4f4; margin-top: 20px; color: #333; border-radius: 5px;">
         <h3>Vielen Dank!</h3>
         <p>Ihre Nachricht wurde erfolgreich versendet.</p>
