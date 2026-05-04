@@ -280,35 +280,59 @@
             </iframe>
         </div>
 </section>      
-      <section class="container section-contact" id="kontakt">
-    <h2>KONTAKT</h2>
-    
-    <!-- Action kısmı hello@flinden.de mail adresinize göre mailto olarak güncellendi -->
-    <form id="contact-form" action="mailto:hello@flinden.de" method="POST" enctype="text/plain">
-        <div class="form-group">
-            <input type="text" name="Name" placeholder="Name" required>
-        </div>
-        <div class="form-group">
-            <input type="email" name="Email" placeholder="E-Mail" required>
-        </div>
-        <div class="form-group">
-            <textarea name="Nachricht" rows="5" placeholder="Ihre Nachricht" required></textarea>
-        </div>
-        
-        <div class="form-group checkbox-group">
-            <input type="checkbox" name="Datenschutz-Akzeptiert" id="datenschutz" required>
-            <label for="datenschutz">
-                Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und akzeptiere sie.
-            </label>
-        </div>
+      <section id="sec10" class="section10">
+    <div class="container">
+        <div class="contact-form-wrapper">
+            <h2>Starten wir Ihr nächstes Projekt!</h2>
+            <p class="form-subtitle">
+                Haben Sie eine Idee oder planen ein Projekt?<br>
+                Ich unterstütze Sie gerne bei Branding, Printdesign und digitalen Medien.
+            </p>
 
-        <!-- Butona tıklandığında teşekkür mesajını gösteren fonksiyon eklendi -->
-        <button type="submit" class="hero-btn" onclick="showSuccess()">SENDEN</button>
-    </form>
+            <!-- Action updated to mailto and enctype added for clean text formatting -->
+            <form id="contact-form" class="contact-form" action="mailto:hello@flinden.de?subject=Neue Projektanfrage - flinden.de" method="POST" enctype="text/plain">
 
-    <div id="success-message" style="display:none; text-align: center; padding: 20px; background: #f4f4f4; margin-top: 20px; color: #333; border-radius: 5px;">
-        <h3>Vielen Dank!</h3>
-        <p>Ihre Nachricht wurde erfolgreich versendet.</p>
+                <div class="form-group">
+                    <label for="name">Vollständiger Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-Mail-Adresse:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefonnummer (optional):</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Ihre Nachricht:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <div class="form-footer">
+                    <!-- Added onclick event to trigger the success message -->
+                    <button type="submit" class="hero-btn" onclick="showSuccess()">SENDEN</button>
+                    
+                    <label class="checkbox-label">
+                    <input type="checkbox" name="datenschutz" required>
+                        Ich habe die 
+                        <a href="datenschutzbestimmungen.html" target="_blank" style="text-decoration: underline; font-weight: bold;">
+                        Datenschutzbestimmungen
+                        </a> 
+                        gelesen und stimme zu.
+                    </label>
+                </div>
+            </form>
+
+            <!-- Success Message (Make sure your CSS has .success-message { display: none; } by default) -->
+            <div id="success-message" class="success-message" style="display:none;">
+                <h3>Ihre Nachricht wurde erfolgreich gesendet!</h3>
+                <p>Vielen Dank. Wir melden uns so schnell wie möglich bei Ihnen zurück.</p>
+            </div>
+        </div>
     </div>
 </section>
        
