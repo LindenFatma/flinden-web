@@ -64,16 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     } 
     // =====================
-    // DATENSCHUTZ LINKİ
-    // =====================
-    const datenschutzCheckbox = document.querySelector('input[name="datenschutz"]');
-
-    if (datenschutzCheckbox) {
-        datenschutzCheckbox.addEventListener("click", () => {
-            window.open("datenschutz.html", "_blank");
-        });
-    }
-
+   
     // =====================
     // MOBİL MENÜ 
     // =====================
