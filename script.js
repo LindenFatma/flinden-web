@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // =====================
     // İLETİŞİM FORMU - FORMSUBMIT AJAX
     // =====================
-    /*const contactForm = document.getElementById("contact-form");
+    const contactForm = document.getElementById("contact-form");
     const successMessage = document.getElementById("success-message");
 
     if (contactForm && successMessage) {
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert("Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.");
             });
         });
-    } */
+    } 
     // =====================
     // DATENSCHUTZ LINKİ
     // =====================
