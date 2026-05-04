@@ -289,8 +289,12 @@
                 Ich unterstütze Sie gerne bei Branding, Printdesign und digitalen Medien.
             </p>
 
-            <!-- Action updated to mailto and enctype added for clean text formatting -->
-            <form id="contact-form" class="contact-form" action="mailto:hello@flinden.de?subject=Neue Projektanfrage - flinden.de" method="POST" enctype="text/plain">
+            <!-- FormSubmit bağlantısı sorunsuz çalışacak şekilde eklendi -->
+            <form id="contact-form" class="contact-form" action="https://formsubmit.co" method="POST">
+
+                <!-- Gizli Alanlar: Mail konusu ve robot koruması -->
+                <input type="hidden" name="_subject" value="Neue Projektanfrage - flinden.de">
+                <input type="hidden" name="_captcha" value="false">
 
                 <div class="form-group">
                     <label for="name">Vollständiger Name:</label>
@@ -313,8 +317,7 @@
                 </div>
 
                 <div class="form-footer">
-                    <!-- Added onclick event to trigger the success message -->
-                    <button type="submit" class="hero-btn" onclick="showSuccess()">SENDEN</button>
+                    <button type="submit" class="hero-btn">SENDEN</button>
                     
                     <label class="checkbox-label">
                     <input type="checkbox" name="datenschutz" required>
@@ -327,7 +330,7 @@
                 </div>
             </form>
 
-            <!-- Success Message (Make sure your CSS has .success-message { display: none; } by default) -->
+            <!-- Başarı Mesajı -->
             <div id="success-message" class="success-message" style="display:none;">
                 <h3>Ihre Nachricht wurde erfolgreich gesendet!</h3>
                 <p>Vielen Dank. Wir melden uns so schnell wie möglich bei Ihnen zurück.</p>
