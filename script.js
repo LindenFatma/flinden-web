@@ -55,15 +55,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     contactForm.style.display = "none";
                     successMessage.style.display = "block";
                 } else {
-                    alert("Form gönderilemedi. Lütfen tekrar deneyin.");
+                    alert("Das Formular konnte nicht gesendet werden. Bitte versuchen Sie es erneut.");
                 }
             })
             .catch(error => {
-                alert("Bir hata oluştu. Lütfen tekrar deneyin.");
+                alert("Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.");
             });
         });
     }
-
     // =====================
     // DATENSCHUTZ LINKİ
     // =====================
