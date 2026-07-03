@@ -24,16 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 showSlide(i);
             });
         });
-
-        // Otomatik slider kapalı
-        // setInterval(() => {
-        //     let next = (currentIndex + 1) % slides.length;
-        //     showSlide(next);
-        // }, 5000);
     }
 
     // =====================
-    // İLETİŞİM FORMU - FORMSUBMIT AJAX
+    // İLETİŞİM FORMU
     // =====================
     const contactForm = document.getElementById("contact-form");
     const successMessage = document.getElementById("success-message");
@@ -62,11 +56,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert("Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.");
             });
         });
-    } 
+    }
+
     // =====================
-   
-    // =====================
-    // MOBİL MENÜ 
+    // MOBİL MENÜ
     // =====================
     const navCheck = document.getElementById("nav-check");
     const navLinks = document.querySelectorAll(".nav ul li a");
@@ -78,6 +71,35 @@ document.addEventListener("DOMContentLoaded", function () {
                     navCheck.checked = false;
                 }
             });
+        });
+    }
+
+    // =====================
+    // LIGHTBOX
+    // =====================
+    const previews = document.querySelectorAll(".preview");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".close");
+
+    if (previews.length && lightbox && lightboxImg && closeBtn) {
+
+        previews.forEach(button => {
+            button.addEventListener("click", function (e) {
+                e.preventDefault();
+                lightboxImg.src = this.dataset.img;
+                lightbox.style.display = "flex";
+            });
+        });
+
+        closeBtn.addEventListener("click", () => {
+            lightbox.style.display = "none";
+        });
+
+        lightbox.addEventListener("click", function (e) {
+            if (e.target === lightbox) {
+                lightbox.style.display = "none";
+            }
         });
     }
 
