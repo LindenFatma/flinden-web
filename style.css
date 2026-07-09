@@ -55,6 +55,16 @@ h3 {
     font-size: 17px;
     margin-bottom: var(--space-sm);
 }
+.h3klein{
+   font-size: 1.3rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 35px 0 15px;
+    text-transform: none;
+    letter-spacing: 0.5px;
+}
+
+   
 p {
     font-size: 1.25rem;
     line-height: 1.6;
