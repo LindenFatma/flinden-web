@@ -381,8 +381,6 @@ section {
 }
 
 
-
-
 .cross-btn {
     display: inline-block;
     padding: 12px 20px;
@@ -390,7 +388,7 @@ section {
     color: #e60000;
     text-decoration: none;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 700;
     transition: 0.3s ease;
 }
 
